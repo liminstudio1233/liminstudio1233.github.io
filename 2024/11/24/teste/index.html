@@ -13,7 +13,7 @@
   
   <title>
     
-      archive_a: 2024/10 
+      title 
       
       
       |
@@ -106,32 +106,70 @@
 
 
       <div class="flex-container">
-        <!-- 归档页，展示本站所有文章，按照年份降序归类，url形式：https://yoursite/archives/ -->
+        <!-- 文章详情页，展示文章具体内容，url形式：https://yoursite/文章标题/ -->
+<!-- 同时为「标签tag」，「朋友friend」，「分类categories」，「关于about」页面的承载页面，具体展示取决于page.type -->
 
-<!-- last: 按年份把文章分组，当前遍历到的年份 -->
-<!-- now: 当前遍历到的文章的发布年份 -->
 
-<div class="container archives">
-  <div class="post-list">
-    
-        <!-- 后续文章的发布年份呈现 -->
-        <div class="content-title">
-          <h2>
-            <span>2024</span>
-          </h2>
-        </div>
-      
-      <div class="post-item" title="图文教程在上方博客👆👆👆">
-        <div class="time-m-d">10-23</div>
-        <div class="title">
-          <a href="/2024/10/23/hello-world/">
-            <span>图文教程在上方博客👆👆👆</span>
-          </a>
-        </div>
+  <!-- LaTex Display -->
+
+  
+    <script async type="text/javascript" src="/plugins/mathjax/tex-chtml.js"></script>
+  
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      }
+    }
+  </script>
+
+
+
+
+
+  <!-- clipboard -->
+
+  
+    <script async type="text/javascript" src="/plugins/clipboard.min.js"></script>
+  
+  
+<script src="/js/codeCopy.js"></script>
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  <!-- 文章内容页 url形式：https://yoursite/文章标题/ -->
+  <div class="container post-details" id="post-details">
+    <div class="post-content">
+      <div class="post-title">title</div>
+      <div class="post-attach">
+        <span class="post-pubtime">
+          <i class="iconfont icon-updatetime mr-10" title="更新时间"></i>
+          2024-11-24 09:00:20
+        </span>
+        
       </div>
+      <div class="markdown-body">
+        <h1 id="你好测试"><a href="#你好测试" class="headerlink" title="你好测试"></a>你好测试</h1><h3 id="如果帮到了您，请您点赞，评论，分享，订阅，谢谢"><a href="#如果帮到了您，请您点赞，评论，分享，订阅，谢谢" class="headerlink" title="如果帮到了您，请您点赞，评论，分享，订阅，谢谢"></a>如果帮到了您，请您点赞，评论，分享，订阅，谢谢</h3><p>❤️</p>
+
+      </div>
+      
+    </div>
+    
+
     
   </div>
-</div>
+
 
         
 <div class="footer">
